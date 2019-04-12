@@ -27,7 +27,7 @@ src/stm32f10x_it.o: ../src/stm32f10x_it.c ../include/stm32f10x_it.h \
  ../system/include/stm32f1-stdperiph/stm32f10x_usart.h \
  ../system/include/stm32f1-stdperiph/stm32f10x_wwdg.h \
  ../system/include/stm32f1-stdperiph/misc.h \
- C:\workspace\test_workspace\w6100-evb-gcc-eclipse-loopback\src\PlatformHandler/timerHandler.h
+ C:\workspace\test_workspace\w6100-evb-gcc-eclipse\gcc-eclipse-projectfolder\w6100-evb-gcc-eclipse\src\PlatformHandler/timerHandler.h
 
 ../include/stm32f10x_it.h:
 
@@ -91,4 +91,4 @@ src/stm32f10x_it.o: ../src/stm32f10x_it.c ../include/stm32f10x_it.h \
 
 ../system/include/stm32f1-stdperiph/misc.h:
 
-C:\workspace\test_workspace\w6100-evb-gcc-eclipse-loopback\src\PlatformHandler/timerHandler.h:
+C:\workspace\test_workspace\w6100-evb-gcc-eclipse\gcc-eclipse-projectfolder\w6100-evb-gcc-eclipse\src\PlatformHandler/timerHandler.h:

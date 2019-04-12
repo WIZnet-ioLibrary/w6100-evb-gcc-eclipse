@@ -1,8 +1,8 @@
 src/W6100RelFunctions.o: ../src/W6100RelFunctions.c \
  ../include/W6100RelFunctions.h \
- C:\workspace\test_workspace\w6100-evb-gcc-eclipse-loopback\src\io6Library\Ethernet/wizchip_conf.h \
- c:\workspace\test_workspace\w6100-evb-gcc-eclipse-loopback\src\io6library\ethernet\w6100\w6100.h \
- c:\workspace\test_workspace\w6100-evb-gcc-eclipse-loopback\src\io6library\application\application.h \
+ C:\workspace\test_workspace\w6100-evb-gcc-eclipse\io6Library\Ethernet/wizchip_conf.h \
+ c:\workspace\test_workspace\w6100-evb-gcc-eclipse\io6library\ethernet\w6100\w6100.h \
+ c:\workspace\test_workspace\w6100-evb-gcc-eclipse\io6library\application\application.h \
  ../system/include/stm32f1-stdperiph/stm32f10x_gpio.h \
  ../system/include/cmsis/stm32f10x.h ../system/include/cmsis/core_cm3.h \
  ../system/include/cmsis/core_cmInstr.h \
@@ -34,11 +34,11 @@ src/W6100RelFunctions.o: ../src/W6100RelFunctions.c \
 
 ../include/W6100RelFunctions.h:
 
-C:\workspace\test_workspace\w6100-evb-gcc-eclipse-loopback\src\io6Library\Ethernet/wizchip_conf.h:
+C:\workspace\test_workspace\w6100-evb-gcc-eclipse\io6Library\Ethernet/wizchip_conf.h:
 
-c:\workspace\test_workspace\w6100-evb-gcc-eclipse-loopback\src\io6library\ethernet\w6100\w6100.h:
+c:\workspace\test_workspace\w6100-evb-gcc-eclipse\io6library\ethernet\w6100\w6100.h:
 
-c:\workspace\test_workspace\w6100-evb-gcc-eclipse-loopback\src\io6library\application\application.h:
+c:\workspace\test_workspace\w6100-evb-gcc-eclipse\io6library\application\application.h:
 
 ../system/include/stm32f1-stdperiph/stm32f10x_gpio.h:
 

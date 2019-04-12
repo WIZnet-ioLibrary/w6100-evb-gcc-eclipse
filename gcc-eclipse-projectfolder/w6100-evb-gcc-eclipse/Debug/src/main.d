@@ -29,18 +29,17 @@ src/main.o: ../src/main.c ../system/include/diag/Trace.h \
  ../system/include/stm32f1-stdperiph/stm32f10x_usart.h \
  ../system/include/stm32f1-stdperiph/stm32f10x_wwdg.h \
  ../system/include/stm32f1-stdperiph/misc.h ../include/BlinkLed.h \
- C:\workspace\test_workspace\w6100-evb-gcc-eclipse-loopback\src\PlatformHandler/nvicHandler.h \
- C:\workspace\test_workspace\w6100-evb-gcc-eclipse-loopback\src\PlatformHandler/rccHandler.h \
- C:\workspace\test_workspace\w6100-evb-gcc-eclipse-loopback\src\PlatformHandler/gpioHandler.h \
- C:\workspace\test_workspace\w6100-evb-gcc-eclipse-loopback\src\PlatformHandler/uartHandler.h \
- C:\workspace\test_workspace\w6100-evb-gcc-eclipse-loopback\src\PlatformHandler/timerHandler.h \
- C:\workspace\test_workspace\w6100-evb-gcc-eclipse-loopback\src\PlatformHandler/fsmcHandler.h \
- C:\workspace\test_workspace\w6100-evb-gcc-eclipse-loopback\src\PlatformHandler/spiHandler.h \
- C:\workspace\test_workspace\w6100-evb-gcc-eclipse-loopback\src\io6Library\Ethernet/wizchip_conf.h \
- c:\workspace\test_workspace\w6100-evb-gcc-eclipse-loopback\src\io6library\ethernet\w6100\w6100.h \
- c:\workspace\test_workspace\w6100-evb-gcc-eclipse-loopback\src\io6library\application\application.h \
- ../include/W6100RelFunctions.h \
- C:\workspace\test_workspace\w6100-evb-gcc-eclipse-loopback\src\io6Library\Application\loopback/loopback.h
+ C:\workspace\test_workspace\w6100-evb-gcc-eclipse\gcc-eclipse-projectfolder\w6100-evb-gcc-eclipse\src\PlatformHandler/nvicHandler.h \
+ C:\workspace\test_workspace\w6100-evb-gcc-eclipse\gcc-eclipse-projectfolder\w6100-evb-gcc-eclipse\src\PlatformHandler/rccHandler.h \
+ C:\workspace\test_workspace\w6100-evb-gcc-eclipse\gcc-eclipse-projectfolder\w6100-evb-gcc-eclipse\src\PlatformHandler/gpioHandler.h \
+ C:\workspace\test_workspace\w6100-evb-gcc-eclipse\gcc-eclipse-projectfolder\w6100-evb-gcc-eclipse\src\PlatformHandler/uartHandler.h \
+ C:\workspace\test_workspace\w6100-evb-gcc-eclipse\gcc-eclipse-projectfolder\w6100-evb-gcc-eclipse\src\PlatformHandler/timerHandler.h \
+ C:\workspace\test_workspace\w6100-evb-gcc-eclipse\gcc-eclipse-projectfolder\w6100-evb-gcc-eclipse\src\PlatformHandler/fsmcHandler.h \
+ C:\workspace\test_workspace\w6100-evb-gcc-eclipse\gcc-eclipse-projectfolder\w6100-evb-gcc-eclipse\src\PlatformHandler/spiHandler.h \
+ C:\workspace\test_workspace\w6100-evb-gcc-eclipse\io6Library\Ethernet/wizchip_conf.h \
+ c:\workspace\test_workspace\w6100-evb-gcc-eclipse\io6library\ethernet\w6100\w6100.h \
+ c:\workspace\test_workspace\w6100-evb-gcc-eclipse\io6library\application\application.h \
+ ../include/W6100RelFunctions.h
 
 ../system/include/diag/Trace.h:
 
@@ -112,26 +111,24 @@ src/main.o: ../src/main.c ../system/include/diag/Trace.h \
 
 ../include/BlinkLed.h:
 
-C:\workspace\test_workspace\w6100-evb-gcc-eclipse-loopback\src\PlatformHandler/nvicHandler.h:
+C:\workspace\test_workspace\w6100-evb-gcc-eclipse\gcc-eclipse-projectfolder\w6100-evb-gcc-eclipse\src\PlatformHandler/nvicHandler.h:
 
-C:\workspace\test_workspace\w6100-evb-gcc-eclipse-loopback\src\PlatformHandler/rccHandler.h:
+C:\workspace\test_workspace\w6100-evb-gcc-eclipse\gcc-eclipse-projectfolder\w6100-evb-gcc-eclipse\src\PlatformHandler/rccHandler.h:
 
-C:\workspace\test_workspace\w6100-evb-gcc-eclipse-loopback\src\PlatformHandler/gpioHandler.h:
+C:\workspace\test_workspace\w6100-evb-gcc-eclipse\gcc-eclipse-projectfolder\w6100-evb-gcc-eclipse\src\PlatformHandler/gpioHandler.h:
 
-C:\workspace\test_workspace\w6100-evb-gcc-eclipse-loopback\src\PlatformHandler/uartHandler.h:
+C:\workspace\test_workspace\w6100-evb-gcc-eclipse\gcc-eclipse-projectfolder\w6100-evb-gcc-eclipse\src\PlatformHandler/uartHandler.h:
 
-C:\workspace\test_workspace\w6100-evb-gcc-eclipse-loopback\src\PlatformHandler/timerHandler.h:
+C:\workspace\test_workspace\w6100-evb-gcc-eclipse\gcc-eclipse-projectfolder\w6100-evb-gcc-eclipse\src\PlatformHandler/timerHandler.h:
 
-C:\workspace\test_workspace\w6100-evb-gcc-eclipse-loopback\src\PlatformHandler/fsmcHandler.h:
+C:\workspace\test_workspace\w6100-evb-gcc-eclipse\gcc-eclipse-projectfolder\w6100-evb-gcc-eclipse\src\PlatformHandler/fsmcHandler.h:
 
-C:\workspace\test_workspace\w6100-evb-gcc-eclipse-loopback\src\PlatformHandler/spiHandler.h:
+C:\workspace\test_workspace\w6100-evb-gcc-eclipse\gcc-eclipse-projectfolder\w6100-evb-gcc-eclipse\src\PlatformHandler/spiHandler.h:
 
-C:\workspace\test_workspace\w6100-evb-gcc-eclipse-loopback\src\io6Library\Ethernet/wizchip_conf.h:
+C:\workspace\test_workspace\w6100-evb-gcc-eclipse\io6Library\Ethernet/wizchip_conf.h:
 
-c:\workspace\test_workspace\w6100-evb-gcc-eclipse-loopback\src\io6library\ethernet\w6100\w6100.h:
+c:\workspace\test_workspace\w6100-evb-gcc-eclipse\io6library\ethernet\w6100\w6100.h:
 
-c:\workspace\test_workspace\w6100-evb-gcc-eclipse-loopback\src\io6library\application\application.h:
+c:\workspace\test_workspace\w6100-evb-gcc-eclipse\io6library\application\application.h:
 
 ../include/W6100RelFunctions.h:
-
-C:\workspace\test_workspace\w6100-evb-gcc-eclipse-loopback\src\io6Library\Application\loopback/loopback.h:

@@ -27,13 +27,13 @@ CPP_DEPS :=
 
 # Every subdirectory with source files must be described here
 SUBDIRS := \
+io6Library/Application/loopback \
+io6Library/Ethernet/W6100 \
+io6Library/Ethernet \
+io6Library/Internet/DHCP6 \
+io6Library/Internet/DNS \
 src \
 src/PlatformHandler \
-src/io6Library/Application/loopback \
-src/io6Library/Ethernet/W6100 \
-src/io6Library/Ethernet \
-src/io6Library/Internet/DHCP6 \
-src/io6Library/Internet/DNS \
 system/src/cmsis \
 system/src/cortexm \
 system/src/diag \

@@ -13,13 +13,13 @@ RM := rm -rf
 -include system/src/diag/subdir.mk
 -include system/src/cortexm/subdir.mk
 -include system/src/cmsis/subdir.mk
--include src/io6Library/Internet/DNS/subdir.mk
--include src/io6Library/Internet/DHCP6/subdir.mk
--include src/io6Library/Ethernet/W6100/subdir.mk
--include src/io6Library/Ethernet/subdir.mk
--include src/io6Library/Application/loopback/subdir.mk
 -include src/PlatformHandler/subdir.mk
 -include src/subdir.mk
+-include io6Library/Internet/DNS/subdir.mk
+-include io6Library/Internet/DHCP6/subdir.mk
+-include io6Library/Ethernet/W6100/subdir.mk
+-include io6Library/Ethernet/subdir.mk
+-include io6Library/Application/loopback/subdir.mk
 -include subdir.mk
 -include objects.mk
 
@@ -54,38 +54,38 @@ endif
 
 # Add inputs and outputs from these tool invocations to the build variables 
 SECONDARY_FLASH += \
-w6100-evb-gcc-eclipse-loopback.bin \
+W6100-EVB-gcc-eclipse.bin \
 
 SECONDARY_SIZE += \
-w6100-evb-gcc-eclipse-loopback.siz \
+W6100-EVB-gcc-eclipse.siz \
 
 
 # All Target
-all: w6100-evb-gcc-eclipse-loopback.elf secondary-outputs
+all: W6100-EVB-gcc-eclipse.elf secondary-outputs
 
 # Tool invocations
-w6100-evb-gcc-eclipse-loopback.elf: $(OBJS) $(USER_OBJS)
+W6100-EVB-gcc-eclipse.elf: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: Cross ARM GNU C++ Linker'
-	arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"w6100-evb-gcc-eclipse-loopback.map" --specs=nano.specs -specs=nosys.specs -o "w6100-evb-gcc-eclipse-loopback.elf" $(OBJS) $(USER_OBJS) $(LIBS)
+	arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"W6100-EVB-gcc-eclipse.map" --specs=nano.specs -specs=nosys.specs -o "W6100-EVB-gcc-eclipse.elf" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
-w6100-evb-gcc-eclipse-loopback.bin: w6100-evb-gcc-eclipse-loopback.elf
+W6100-EVB-gcc-eclipse.bin: W6100-EVB-gcc-eclipse.elf
 	@echo 'Invoking: Cross ARM GNU Create Flash Image'
-	arm-none-eabi-objcopy -O binary "w6100-evb-gcc-eclipse-loopback.elf"  "w6100-evb-gcc-eclipse-loopback.bin"
+	arm-none-eabi-objcopy -O binary "W6100-EVB-gcc-eclipse.elf"  "W6100-EVB-gcc-eclipse.bin"
 	@echo 'Finished building: $@'
 	@echo ' '
 
-w6100-evb-gcc-eclipse-loopback.siz: w6100-evb-gcc-eclipse-loopback.elf
+W6100-EVB-gcc-eclipse.siz: W6100-EVB-gcc-eclipse.elf
 	@echo 'Invoking: Cross ARM GNU Print Size'
-	arm-none-eabi-size --format=berkeley "w6100-evb-gcc-eclipse-loopback.elf"
+	arm-none-eabi-size --format=berkeley "W6100-EVB-gcc-eclipse.elf"
 	@echo 'Finished building: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) $(CC_DEPS)$(C++_DEPS)$(OBJS)$(C_UPPER_DEPS)$(CXX_DEPS)$(SECONDARY_FLASH)$(SECONDARY_SIZE)$(ASM_DEPS)$(S_UPPER_DEPS)$(C_DEPS)$(CPP_DEPS) w6100-evb-gcc-eclipse-loopback.elf
+	-$(RM) $(CC_DEPS)$(C++_DEPS)$(OBJS)$(C_UPPER_DEPS)$(CXX_DEPS)$(SECONDARY_FLASH)$(SECONDARY_SIZE)$(ASM_DEPS)$(S_UPPER_DEPS)$(C_DEPS)$(CPP_DEPS) W6100-EVB-gcc-eclipse.elf
 	-@echo ' '
 
 secondary-outputs: $(SECONDARY_FLASH) $(SECONDARY_SIZE)
