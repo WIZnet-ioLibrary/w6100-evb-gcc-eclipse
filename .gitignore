@@ -1,13 +1,2 @@
-*.o
-*.d
-gcc-eclipse-projectfolder/w6100-evb-gcc-eclipse/Debug/src/io6Library/Application/loopback/*.o
-gcc-eclipse-projectfolder/w6100-evb-gcc-eclipse/Debug/src/io6Library/Application/loopback/*.d
-gcc-eclipse-projectfolder/w6100-evb-gcc-eclipse/Debug/src/io6Library/Ethernet/*.o
-gcc-eclipse-projectfolder/w6100-evb-gcc-eclipse/Debug/src/io6Library/Ethernet/*.d
-gcc-eclipse-projectfolder/w6100-evb-gcc-eclipse/Debug/src/io6Library/Ethernet/W6100/*.o
-gcc-eclipse-projectfolder/w6100-evb-gcc-eclipse/Debug/src/io6Library/Ethernet/W6100/*.d
-*.d
-gcc-eclipse-projectfolder/w6100-evb-gcc-eclipse/Debug/src/io6Library/Application/loopback/loopback.d
-gcc-eclipse-projectfolder/w6100-evb-gcc-eclipse/Debug/src/io6Library/Application/loopback/loopback.d
-gcc-eclipse-projectfolder/w6100-evb-gcc-eclipse/Debug/src/io6Library/Application/loopback/loopback.d
-gcc-eclipse-projectfolder/w6100-evb-gcc-eclipse/Debug/src/io6Library/Application/loopback/loopback.o
+gcc-eclipse-projectfolder/w6100-evb-gcc-eclipse/Debug/src/*
+
