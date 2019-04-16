@@ -54,38 +54,38 @@ endif
 
 # Add inputs and outputs from these tool invocations to the build variables 
 SECONDARY_FLASH += \
-W6100-EVB-gcc-eclipse.bin \
+W6100-evb-gcc-eclipse.bin \
 
 SECONDARY_SIZE += \
-W6100-EVB-gcc-eclipse.siz \
+W6100-evb-gcc-eclipse.siz \
 
 
 # All Target
-all: W6100-EVB-gcc-eclipse.elf secondary-outputs
+all: W6100-evb-gcc-eclipse.elf secondary-outputs
 
 # Tool invocations
-W6100-EVB-gcc-eclipse.elf: $(OBJS) $(USER_OBJS)
+W6100-evb-gcc-eclipse.elf: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: Cross ARM GNU C++ Linker'
-	arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"W6100-EVB-gcc-eclipse.map" --specs=nano.specs -specs=nosys.specs -o "W6100-EVB-gcc-eclipse.elf" $(OBJS) $(USER_OBJS) $(LIBS)
+	arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"W6100-evb-gcc-eclipse.map" --specs=nano.specs -specs=nosys.specs -o "W6100-evb-gcc-eclipse.elf" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
-W6100-EVB-gcc-eclipse.bin: W6100-EVB-gcc-eclipse.elf
+W6100-evb-gcc-eclipse.bin: W6100-evb-gcc-eclipse.elf
 	@echo 'Invoking: Cross ARM GNU Create Flash Image'
-	arm-none-eabi-objcopy -O binary "W6100-EVB-gcc-eclipse.elf"  "W6100-EVB-gcc-eclipse.bin"
+	arm-none-eabi-objcopy -O binary "W6100-evb-gcc-eclipse.elf"  "W6100-evb-gcc-eclipse.bin"
 	@echo 'Finished building: $@'
 	@echo ' '
 
-W6100-EVB-gcc-eclipse.siz: W6100-EVB-gcc-eclipse.elf
+W6100-evb-gcc-eclipse.siz: W6100-evb-gcc-eclipse.elf
 	@echo 'Invoking: Cross ARM GNU Print Size'
-	arm-none-eabi-size --format=berkeley "W6100-EVB-gcc-eclipse.elf"
+	arm-none-eabi-size --format=berkeley "W6100-evb-gcc-eclipse.elf"
 	@echo 'Finished building: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) $(CC_DEPS)$(C++_DEPS)$(OBJS)$(C_UPPER_DEPS)$(CXX_DEPS)$(SECONDARY_FLASH)$(SECONDARY_SIZE)$(ASM_DEPS)$(S_UPPER_DEPS)$(C_DEPS)$(CPP_DEPS) W6100-EVB-gcc-eclipse.elf
+	-$(RM) $(CC_DEPS)$(C++_DEPS)$(OBJS)$(C_UPPER_DEPS)$(CXX_DEPS)$(SECONDARY_FLASH)$(SECONDARY_SIZE)$(ASM_DEPS)$(S_UPPER_DEPS)$(C_DEPS)$(CPP_DEPS) W6100-evb-gcc-eclipse.elf
 	-@echo ' '
 
 secondary-outputs: $(SECONDARY_FLASH) $(SECONDARY_SIZE)
