@@ -1,5 +1,5 @@
 # Index
-- [Loopback Example for W6100-EVB with GCC and Eclipse IDE](#Loopback-Example-for-W6100-EVB-with-GCC-and-Eclipse-IDE)
+- [Basic Example for W6100-EVB with GCC and Eclipse IDE](#Basic-Example-for-W6100-EVB-with-GCC-and-Eclipse-IDE)
 - [Hardware Environment](#Hardware-Environment)
 - [Software Environments](#Software-Environment)
 - [Run](#Run)
@@ -8,7 +8,7 @@
 
 
 ------
-# Loopback Example for W6100-EVB with GCC and Eclipse IDE
+# Basic Example for W6100-EVB with GCC and Eclipse IDE
 Common to Any MCU, Easy to Add-on. Internet Offload co-Processor, HW TCP/IP chip,
 best fits for low-end Non-OS devices connecting to Ethernet for the Internet of Things. These will be updated continuously.
 
